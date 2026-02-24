@@ -5,6 +5,8 @@ const schema = require('./schema/schema')
 const mongoose = require('mongoose')
 require('dotenv').config()
 const authorModel = require('./models/authorModel')
+const cors = require('cors')
+app.use(cors())
 
 
 const port = process.env.PORT || 5000
